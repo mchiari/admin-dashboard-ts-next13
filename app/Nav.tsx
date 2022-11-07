@@ -1,11 +1,12 @@
 import Image from "next/image";
 import React from "react";
 
-import logo from "../assets/ACME-logo.png";
+import logo from "../public/ACME-logo.png";
+
 
 export const Nav = () => {
 	return (
-		<nav className='flex justify-end items-center h-16 bg-stone-100 border-stone-500 border-solid border-[1px] border-opacity-5 '>
+		<nav className='flex justify-end items-center h-16 bg-slate-100 border-slate-500 border-solid border-[1px] border-opacity-5 '>
 			<div className='flex justify-center items-center gap-4 px-5'>
 				<div className='flex items-center justify-center rounded-full bg-slate-200 w-8 h-8'>
 					<svg
@@ -14,7 +15,7 @@ export const Nav = () => {
 						viewBox='0 0 24 24'
 						strokeWidth={1.5}
 						stroke='currentColor'
-						className='w-6 h-6 stroke-slate-500'
+						className='w-6 h-6 stroke-red-600'
 					>
 						<path
 							strokeLinecap='round'
@@ -31,7 +32,7 @@ export const Nav = () => {
 						viewBox='0 0 24 24'
 						strokeWidth={1.5}
 						stroke='currentColor'
-						className='w-6 h-6 stroke-slate-500'
+						className='w-6 h-6 stroke-red-600'
 					>
 						<path
 							strokeLinecap='round'
@@ -48,7 +49,7 @@ export const Nav = () => {
 						viewBox='0 0 24 24'
 						strokeWidth={1.5}
 						stroke='currentColor'
-						className='w-6 h-6 stroke-slate-500'
+						className='w-6 h-6 stroke-red-600'
 					>
 						<path
 							strokeLinecap='round'
@@ -60,7 +61,7 @@ export const Nav = () => {
 				<div className='w-0 h-6 border-solid border-slate-500 border-[1px]'></div>
 				<div className='flex justify-center items-center gap-4'>
 					<Image src={logo} alt={"logo"} className={"w-16"} />
-					Welcome, admin
+					<p className="text-slate-500">Welcome, admin</p>
 				</div>
 			</div>
 		</nav>
